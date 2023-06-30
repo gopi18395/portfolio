@@ -12,13 +12,13 @@ const Home = () => {
             <div className='home_container container grid'>
                 <div className='home_content grid'>
                     <div className='home_social'>
-                        <a href='https://www.linkedin.com/' target='_blank' className='home_social_icon'>
+                        <a href='https://www.linkedin.com/' target='_blank' rel="noreferrer" className='home_social_icon'>
                             <UilLinkedinAlt />
                         </a>
-                        <a href='https://dribble.com/' target='_blank' className='home_social_icon'>
+                        <a href='https://dribble.com/' target='_blank' rel="noreferrer" className='home_social_icon'>
                             <UilDribbble />
                         </a>
-                        <a href='https://github.com/' target='_blank' className='home_social_icon'>
+                        <a href='https://github.com/' target='_blank' rel="noreferrer" className='home_social_icon'>
                             <UilGithub />
                         </a>
                     </div>
