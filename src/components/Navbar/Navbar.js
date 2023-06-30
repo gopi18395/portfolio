@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <header className='header' id='header'>
             <nav className='nav container'>
-                <a href='#' className='nav_logo'>Gopi</a>
+                <a href='# ' className='nav_logo'>Gopi</a>
                 <div id='nav_menu' className={toggle ? "nav_menu show_menu" : "nav_menu"}>
                     <ul className='nav_list grid'>
                         <li className='nav_item'>
