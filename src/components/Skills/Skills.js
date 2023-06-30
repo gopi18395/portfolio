@@ -19,8 +19,6 @@ const Skills = () => {
         }
     }
 
-    console.log("FEopen",FEopen);
-    console.log("BEopen",BEopen)
     return (
         <section className='skills section' id='skills'>
             <h2 className='section_title'>

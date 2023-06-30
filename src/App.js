@@ -9,11 +9,11 @@ import Qualification from './components/Qualification/Qualification';
 function App() {
   return (
     <div className="App">
-     <Navbar/>
-     <Home/>
-     <About/>
-     <Skills/>
-     <Qualification/>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Qualification />
     </div>
   );
 }
