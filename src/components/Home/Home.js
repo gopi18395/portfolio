@@ -45,7 +45,7 @@ const Home = () => {
                         <h3 className='home_subtitle'>Gopinath</h3>
                         <p className='home_description'>High level experience in web design and knowledge,
                             producing quality work.</p>
-                        <a href='' className='button button_flex'>
+                        <a className='button button_flex'>
                             Contact Me<UilMessage className='button_icon' />
                         </a>
                     </div>
