@@ -11,12 +11,19 @@ import './Navbar.css';
 const Navbar = () => {
 
     const [toggle, setToggle] = React.useState(false);
+    const navLink = document.querySelectorAll('.nav__link')
 
+    // function linkAction(){
+    //     const navMenu = document.getElementById('nav-menu')
+    //     // When we click on each nav__link, we remove the show-menu class
+    //     navMenu.classList.remove('show-menu')
+    // }
+    // navLink.forEach(n => n.addEventListener('click', linkAction))
 
     return (
         <header className='header' id='header'>
             <nav className='nav container'>
-                <a href='# ' className='nav_logo'>Gopi</a>
+                <a href='# ' className={toggle ? "nav_logo nav_btn_visibility" : "nav_logo"}>Gopi</a>
                 <div id='nav_menu' className={toggle ? "nav_menu show_menu" : "nav_menu"}>
                     <ul className='nav_list grid'>
                         <li className='nav_item'>
@@ -52,7 +59,7 @@ const Navbar = () => {
                     </ul>
                     <UilTimes id="nav_close" className="nav_close" onClick={() => setToggle(false)} />
                 </div>
-                <div className='nav_btns'>
+                <div className={toggle ? "nav_btns nav_btn_visibility" : "nav_btns"}>
                     <div className='nav_toggle' id='nav_toggle' onClick={() => setToggle(true)}>
                         <UilApps />
                     </div>

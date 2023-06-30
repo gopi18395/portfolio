@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1.5rem ;
 }
 
 .nav_logo,
@@ -85,4 +86,8 @@
 
 .show_menu{
     bottom: 0;
+}
+
+.nav_btn_visibility{
+visibility: hidden;
 }
