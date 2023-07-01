@@ -102,12 +102,14 @@ img{
 
 .section_title{
   font-size: var(--h1-font-size);
+  text-align: center;
 }
 
 .section_subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
+  text-align: center;
 }
 
 .contatiner {
