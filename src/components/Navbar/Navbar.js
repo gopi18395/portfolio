@@ -11,40 +11,41 @@ import './Navbar.css';
 const Navbar = () => {
 
     const [toggle, setToggle] = React.useState(false);
+    const [active, setActive] = React.useState('home');
 
     return (
         <header className='header' id='header'>
             <nav className='nav container'>
-                <a href='# ' className={toggle ? "nav_logo nav_btn_visibility" : "nav_logo"}>Gopi</a>
+                <a href='# ' className={toggle ? "nav_logo nav_btn_visibility" : "nav_logo"} onClick={() => setActive("")}>Gopi</a>
                 <div id='nav_menu' className={toggle ? "nav_menu show_menu" : "nav_menu"}>
                     <ul className='nav_list grid'>
-                        <li className='nav_item'>
-                            <a href='#home' className='nav_link'>
+                        <li className='nav_item' onClick={() => setActive("home")}>
+                            <a href='#home' className={`nav_link ${active === "home" ? "active_link" : ""}`}>
                                 <UilEstate className='nav_icon' />Home
                             </a>
                         </li>
-                        <li className='nav_item'>
-                            <a href='#about' className='nav_link'>
+                        <li className='nav_item' onClick={() => setActive("about")}>
+                            <a href='#about' className={`nav_link ${active === "about" ? "active_link" : ""}`}>
                                 <UilUser className='nav_icon' />About
                             </a>
                         </li>
-                        <li className='nav_item'>
-                            <a href='#skills' className='nav_link'>
+                        <li className='nav_item' onClick={() => setActive("skills")}>
+                            <a href='#skills' className={`nav_link ${active === "skills" ? "active_link" : ""}`}>
                                 <UilFileShieldAlt className='nav_icon' />Skills
                             </a>
                         </li>
-                        <li className='nav_item'>
-                            <a href='#services' className='nav_link'>
+                        <li className='nav_item' onClick={() => setActive("services")}>
+                            <a href='#services' className={`nav_link ${active === "services" ? "active_link" : ""}`}>
                                 <UilBriefcaseAlt className='nav_icon' />Services
                             </a>
                         </li>
-                        <li className='nav_item'>
-                            <a href='#portfolio' className='nav_link'>
+                        <li className='nav_item' onClick={() => setActive("portfolio")}>
+                            <a href='#portfolio' className={`nav_link ${active === "portfolio" ? "active_link" : ""}`}>
                                 <UilScenery className='nav_icon' />Portfolio
                             </a>
                         </li>
-                        <li className='nav_item'>
-                            <a href='#contact' className='nav_link'>
+                        <li className='nav_item' onClick={() => setActive("contact")}>
+                            <a href='#contact' className={`nav_link ${active === "contact" ? "active_link" : ""}`}>
                                 <UilMessage className='nav_icon' />Contact
                             </a>
                         </li>

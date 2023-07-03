@@ -91,3 +91,7 @@
 .nav_btn_visibility{
 visibility: hidden;
 }
+
+.active_link{
+    color: var(--first-color);
+}

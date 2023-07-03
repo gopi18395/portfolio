@@ -1,6 +1,9 @@
 .portfolio .portfolio_container {
     overflow: initial;
 }
+.portfolio_container{
+  padding: 1rem;
+}
 
 .portfolio_content {
     padding: 0 1.5rem;
