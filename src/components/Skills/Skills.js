@@ -86,7 +86,10 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className={BEopen ? 'skill_content skills_open' : 'skill_content skills_close'}>
+                    
+                </div>
+                <div>
+                <div className={BEopen ? 'skill_content skills_open' : 'skill_content skills_close'}>
                         <div className='skills_header'>
                             <UilServerNetwork className='skills_icon' />
                             <div>

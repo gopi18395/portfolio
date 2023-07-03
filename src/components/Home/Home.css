@@ -94,13 +94,50 @@
     background-color: var(--first-color-alt);
 }
 
-.button_icon{
+.button_icon {
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
-    transition:  .3s;
+    transition: .3s;
 }
 
-.button_flex{
+.button_flex {
     display: inline-flex;
     align-items: center;
+}
+
+.home_blob_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.home_blob_img {
+    position: absolute;
+}
+
+.home_blob_img, .home_blob_box{
+    width: 300px;
+  }
+
+.home_blob_container>.home_blob_img>img {
+    width: 100%;
+    background-size: cover;
+}
+
+
+.home_blob_container> :nth-child(3) {
+    transform: scale(1.4);
+}
+
+.blur {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    filter: blur(72px);
 }
