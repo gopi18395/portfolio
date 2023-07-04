@@ -80,6 +80,12 @@
 .skills_react {
     width: 90%;
 }
+.skills_jquery {
+    width: 55%;
+}
+.skills_redux {
+    width: 75%;
+}
 
 .skills_node {
     width: 70%;
@@ -93,6 +99,9 @@
     width: 60%;
 }
 
+.skills_mysql{
+    width: 65%; 
+}
 
 .skills_close .skills_list {
     height: 0;

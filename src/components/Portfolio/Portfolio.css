@@ -1,36 +1,37 @@
 .portfolio .portfolio_container {
-    overflow: initial;
+  overflow: initial;
 }
-.portfolio_container{
+
+.portfolio_container {
   padding: 1rem;
 }
 
 .portfolio_content {
-    padding: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .portfolio_img {
-    width: 265px;
-    border-radius: .5rem;
-    justify-self: center;
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center;
 
 }
 
 .portfolio_title {
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
 }
 
 .portfolio_description {
-    margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-0-75);
 }
 
 .portfolio_button:hover .button_icon {
-    transform: translateX(.25rem)
+  transform: translateX(.25rem)
 }
 
-.portfolio_data{
-padding: var(--mb-1-5);
+.portfolio_data {
+  padding: var(--mb-1-5);
 }
 
 .swiper {
@@ -42,7 +43,7 @@ padding: var(--mb-1-5);
   text-align: center;
   font-size: 18px;
   background: #fff;
-
+  padding: 3.5rem;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -54,4 +55,11 @@ padding: var(--mb-1-5);
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-button-next,.swiper-button-prev {
+  color: var(--first-color) !important;
+}
+.swiper-scrollbar ,.swiper-scrollbar-drag{
+  display: none !important;
 }

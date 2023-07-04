@@ -2,16 +2,18 @@ import React from 'react';
 import './Portfolio.css'
 import { UilArrowRight } from '@iconscout/react-unicons';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
-// import required modules
-import { FreeMode, Pagination } from "swiper";
+
 
 import portfolioImg1 from '../../assets/img/portfolio1.jpg';
 import portfolioImg2 from '../../assets/img/portfolio2.jpg';
@@ -24,13 +26,13 @@ const Portfolio = () => {
             <span className='section_subtitle'>Most recent work</span>
             <div className='portfolio_container container'>
                 <Swiper
-                    slidesPerView={1}
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={30}
-                    freeMode={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[FreeMode, Pagination]}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}                   
+                    // onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
                     className="mySwiper"
                 >
                     <SwiperSlide>

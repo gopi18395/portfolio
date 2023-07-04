@@ -103,6 +103,7 @@
 .button_flex {
     display: inline-flex;
     align-items: center;
+    gap: 0.3rem;
 }
 
 .home_blob_container {

@@ -29,13 +29,13 @@ const Skills = () => {
             <div className='skills_container container grid'>
                 <div>
                     <div className={FEopen ? 'skill_content skills_open' : 'skill_content skills_close'}>
-                        <div className='skills_header'>
+                        <div className='skills_header' onClick={(e) => expand(e, "front")}>
                             <UilBracketsCurly className='skills_icon' />
                             <div>
                                 <h1 className='skills_titles'>Front end developer</h1>
                                 <span className='skills_subtitle'>More than 7 years</span>
                             </div>
-                            <UilAngleDown className='skills_arrow' onClick={(e) => expand(e, "front")} />
+                            <UilAngleDown className='skills_arrow' />
                         </div>
                         <div className='skills_list grid'>
                             <div className='skills_data'>
@@ -72,6 +72,16 @@ const Skills = () => {
                             </div>
                             <div className='skills_data'>
                                 <div className='skills_titles'>
+                                    <h3 className='skills_name'>JQuery</h3>
+                                    <span className='skills_number'>55%</span>
+                                </div>
+                                <div className='skills_bar'>
+                                    <span className='skills_percentage skills_jquery'>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='skills_data'>
+                                <div className='skills_titles'>
                                     <h3 className='skills_name'>React</h3>
                                     <span className='skills_number'>90%</span>
                                 </div>
@@ -81,22 +91,33 @@ const Skills = () => {
                                 </div>
                             </div>
 
+                            <div className='skills_data'>
+                                <div className='skills_titles'>
+                                    <h3 className='skills_name'>Redux</h3>
+                                    <span className='skills_number'>75%</span>
+                                </div>
+                                <div className='skills_bar'>
+                                    <span className='skills_percentage skills_redux'>
+                                    </span>
+                                </div>
+                            </div>
+
 
 
                         </div>
                     </div>
 
-                    
+
                 </div>
                 <div>
-                <div className={BEopen ? 'skill_content skills_open' : 'skill_content skills_close'}>
-                        <div className='skills_header'>
+                    <div className={BEopen ? 'skill_content skills_open' : 'skill_content skills_close'}>
+                        <div className='skills_header' onClick={(e) => expand(e, "back")}>
                             <UilServerNetwork className='skills_icon' />
                             <div>
                                 <h1 className='skills_titles'>Backend developer</h1>
                                 <span className='skills_subtitle'>More than 1 years</span>
                             </div>
-                            <UilAngleDown className='skills_arrow' onClick={(e) => expand(e, "back")} />
+                            <UilAngleDown className='skills_arrow' />
                         </div>
                         <div className='skills_list grid'>
                             <div className='skills_data'>
@@ -126,6 +147,16 @@ const Skills = () => {
                                 </div>
                                 <div className='skills_bar'>
                                     <span className='skills_percentage skills_mongodb'>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='skills_data'>
+                                <div className='skills_titles'>
+                                    <h3 className='skills_name'>MySQL</h3>
+                                    <span className='skills_number'>65%</span>
+                                </div>
+                                <div className='skills_bar'>
+                                    <span className='skills_percentage skills_mysql'>
                                     </span>
                                 </div>
                             </div>

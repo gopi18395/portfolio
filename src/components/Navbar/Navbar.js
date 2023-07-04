@@ -13,8 +13,20 @@ const Navbar = () => {
     const [toggle, setToggle] = React.useState(false);
     const [active, setActive] = React.useState('home');
 
+
+    const [navbar, setNavbar] = React.useState(false);
+
+    const changeBG = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true);
+        }
+        else {
+            setNavbar(false);
+        }
+    }
+    window.addEventListener("scroll", changeBG);
     return (
-        <header className='header' id='header'>
+        <header className={`header ${navbar ? "scroll_header" : ""}`} id='header'>
             <nav className='nav container'>
                 <a href='# ' className={toggle ? "nav_logo nav_btn_visibility" : "nav_logo"} onClick={() => setActive("")}>Gopi</a>
                 <div id='nav_menu' className={toggle ? "nav_menu show_menu" : "nav_menu"}>

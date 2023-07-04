@@ -15,7 +15,7 @@ const About = () => {
                 <div className='about_data'>
                     <p className='about_description'>
                         7+ years experienced React Developer with hands-on experience in identifying web-based user interactions along with designing & implementing highly responsive user interface components by deploying React concepts.
-                        Proficient in translating designs & wireframes into high-qualiy code, and writing applications interface code via Javascript and ReactJs workflows. Adept at monitoring & maintaining frontend performace and trouble shooting & debugging the same to bolster over all performace.
+                        Proficient in translating designs & wireframes into high-quality code, and writing applications interface code via Javascript and ReactJs workflows. Adept at monitoring & maintaining frontend performace and trouble shooting & debugging the same to bolster over all performace.
                     </p>
 
                     <div className='about_info'>
@@ -24,7 +24,7 @@ const About = () => {
                             <span className='about_info_name'>Years <br />experience</span>
                         </div>
                         <div>
-                            <span className='about_info_title'>5+</span>
+                            <span className='about_info_title'>6+</span>
                             <span className='about_info_name'>Completed <br />project</span>
                         </div>
                         <div>
@@ -33,7 +33,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='about_buttons'>
-                        <a href={resume} download className='button button-flex'>
+                        <a href={resume} download className='button button_flex'>
                             Download CV <UilDownloadAlt />
                         </a>
                     </div>

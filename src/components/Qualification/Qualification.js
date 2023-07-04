@@ -33,7 +33,7 @@ const Qualification = () => {
                 <h3 className='qualificatin_title'>Computer Science Engineering</h3>
                 <span className='qualification_subtitle'>MNM Jain Engineering College</span>
                 <div className='qualification_calender'>
-                  <UilCalendarAlt />2012 -2016
+                  <UilCalendarAlt className='qualification_icon' />2012 -2016
                 </div>
               </div>
 
@@ -50,7 +50,7 @@ const Qualification = () => {
                 <h3 className='qualificatin_title'>Associate Software Engineer</h3>
                 <span className='qualification_subtitle'>Prodapt solutions</span>
                 <div className='qualification_calender'>
-                  <UilCalendarAlt />2016 -2018
+                  <UilCalendarAlt className='qualification_icon' />2016 -2018
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ const Qualification = () => {
                 <h3 className='qualificatin_title'>Senior Software Engineer</h3>
                 <span className='qualification_subtitle'>Prodapt solutions</span>
                 <div className='qualification_calender'>
-                  <UilCalendarAlt />2018 -2020
+                  <UilCalendarAlt className='qualification_icon' />2018 -2020
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Qualification = () => {
                 <h3 className='qualificatin_title'>Senior Developer</h3>
                 <span className='qualification_subtitle'>Hubino</span>
                 <div className='qualification_calender'>
-                  <UilCalendarAlt />2020 -2023
+                  <UilCalendarAlt className='qualification_icon' />2020 -2023
                 </div>
               </div>
               <div>

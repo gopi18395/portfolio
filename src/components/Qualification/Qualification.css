@@ -40,6 +40,13 @@
 .qualification_calender {
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+    display: flex;
+    align-items: flex-end;
+    gap:.3rem
+}
+
+.qualification_icon{
+    color: var(--first-color);
 }
 
 .qualification_rounder {
