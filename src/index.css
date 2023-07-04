@@ -321,12 +321,12 @@
     }
 
     .about_container {
-      column-gap: 5rem !important;
+      column-gap: 2rem !important;
 
     }
 
     .about_img {
-      width: 500px !important;
+      width: 350px !important;
     }
 
     .about_desciption {
@@ -403,7 +403,7 @@
     .project_container {
       background-color: var(--first-color-second) !important;
       border-radius: 1rem !important;
-      padding: 3rem 2.5rem 0 !important;
+      padding: 1rem 2.5rem 0 !important;
       grid-template-columns: 1fr max-content !important;
       column-gap: 3rem !important;
     }
@@ -466,6 +466,10 @@
 
     .home_social {
       transform: translateX(-6rem) !important;
+    }
+
+    .about_img {
+      width: 500px !important;
     }
 
     .services_container {
