@@ -5,7 +5,6 @@ import { UilGithub } from '@iconscout/react-unicons';
 import { UilMessage } from '@iconscout/react-unicons';
 import { UilMouseAlt } from '@iconscout/react-unicons';
 import { UilArrowDown } from '@iconscout/react-unicons';
-// import backgroundBlob from "../../assets/img/Regular_blob.png";
 import gopiImage from "../../assets/img/gopi_image2.png";
 import { themeContext } from "../../context/index";
 import './Home.css';
