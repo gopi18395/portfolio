@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { UilEstate } from '@iconscout/react-unicons';
 import { UilUser } from '@iconscout/react-unicons';
 import { UilFileShieldAlt } from '@iconscout/react-unicons'
@@ -7,13 +7,17 @@ import { UilScenery } from '@iconscout/react-unicons'
 import { UilMessage } from '@iconscout/react-unicons';
 import { UilTimes } from '@iconscout/react-unicons';
 import { UilApps } from '@iconscout/react-unicons';
+import { UilSun } from '@iconscout/react-unicons';
+import { UilMoon } from '@iconscout/react-unicons'
 import './Navbar.css';
+import { themeContext } from "../../context/index";
 const Navbar = () => {
 
     const [toggle, setToggle] = React.useState(false);
     const [active, setActive] = React.useState('home');
+    const theme = useContext(themeContext);
 
-
+    const darkMode = theme.state.darkMode;
     const [navbar, setNavbar] = React.useState(false);
 
     const changeBG = () => {
@@ -25,6 +29,19 @@ const Navbar = () => {
         }
     }
     window.addEventListener("scroll", changeBG);
+
+    const handleClick = () => {
+        theme.dispatch({ type: "toggle" });
+    }
+
+    React.useEffect(() => {
+        document.documentElement.style.setProperty('--body-color', darkMode ? "#333" : "hsl(340, 60%, 99%)");
+        document.documentElement.style.setProperty('--title-color', darkMode ? "#FFF" : "hsl(340, 8%, 15%)");
+        document.documentElement.style.setProperty('--text-color', darkMode ? "hsl(340, 11%, 82%)" : "hsl(340, 8%, 45%)");
+        document.documentElement.style.setProperty('--first-color', darkMode ? "hsl(19, 68%, 44%)" : "hsl(340, 80%, 60%)");
+        document.documentElement.style.setProperty('--first-color-second', darkMode ? "hsl(19, 68%, 44%)" : "hsl(340, 69%, 61%)");
+
+    }, [darkMode])
     return (
         <header className={`header ${navbar ? "scroll_header" : ""}`} id='header'>
             <nav className='nav container'>
@@ -65,6 +82,14 @@ const Navbar = () => {
                     <UilTimes id="nav_close" className="nav_close" onClick={() => setToggle(false)} />
                 </div>
                 <div className={toggle ? "nav_btns nav_btn_visibility" : "nav_btns"}>
+                    <div className="toggleScroll" onClick={handleClick} >
+                        <UilSun />
+                        <UilMoon />
+                        <div
+                            className={"t-buttonScroll"}
+                            style={darkMode ? { left: "2px" } : { right: "2px" }}
+                        ></div>
+                    </div>
                     <div className='nav_toggle' id='nav_toggle' onClick={() => setToggle(true)}>
                         <UilApps />
                     </div>

@@ -16,6 +16,7 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --card-title: hsl(var(--hue-color), 8%, 15%);
 
     --body-font: 'Poppins', sans-serif;
 
@@ -293,6 +294,11 @@
 
     .nav_menu {
       margin-left: auto !important;
+    }
+
+    .nav_btns{
+      width: 0px !important;
+      justify-content: none !important;
     }
 
     .change_theme {

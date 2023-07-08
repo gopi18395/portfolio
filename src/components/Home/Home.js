@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { UilLinkedinAlt } from '@iconscout/react-unicons'
 import { UilDribbble } from '@iconscout/react-unicons'
 import { UilGithub } from '@iconscout/react-unicons';
 import { UilMessage } from '@iconscout/react-unicons';
 import { UilMouseAlt } from '@iconscout/react-unicons';
 import { UilArrowDown } from '@iconscout/react-unicons';
-import backgroundBlob from "../../assets/img/backgroundBlob.png";
+import backgroundBlob from "../../assets/img/Regular_blob.png";
 import gopiImage from "../../assets/img/gopi_image2.png";
+import { themeContext } from "../../context/index";
 import './Home.css';
+
 const Home = () => {
+
+    const theme = useContext(themeContext);
+
+    const darkMode = theme.state.darkMode;
+
+
     return (
         <section className="home section" id="home">
             <div className='home_container container grid'>
@@ -27,27 +35,36 @@ const Home = () => {
                     <div className='home_img'>
                         <div className="home_blob_container">
                             <div className='home_blob_box'>
-                                <img src={backgroundBlob} alt="bg" />
+                                {/* <img src={backgroundBlob} alt="bg" /> */}
+                                <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" >
+                                    <path fill={darkMode?"hsl(19, 68%, 44%)":"hsl(340, 80%, 60%)"} d="M301,339Q126,438,127,242Q128,46,302,143Q476,240,301,339Z" />
+                                </svg>
                             </div>
                             <div className="home_blob_img">
                                 <img src={gopiImage} alt="gopi" />
                             </div>
-                            <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
+                            <div className="blur" style={darkMode ? { background: "rgb(170 123 85 / 87%)" } : { background: "rgb(238 210 255)" }}></div>
                             <div
                                 className="blur"
-                                style={{
+                                style={darkMode ? {
+                                    background: "rgb(255 228 193 / 30%)",
+                                    top: "11rem",
+                                    width: "21rem",
+                                    height: "11rem",
+                                    left: "-9rem"
+                                } : {
                                     background: "#C1F5FF",
                                     top: "11rem",
                                     width: "21rem",
                                     height: "11rem",
-                                    left: "-9rem",
+                                    left: "-9rem"
                                 }}
                             ></div>
                         </div>
                     </div>
                     <div className='home_data'>
                         <h1 className='home_title'>Hy! I Am</h1>
-                        <h3 className='home_subtitle'>Gopinath</h3>.
+                        <h3 className='home_subtitle'>Gopinath</h3>
                         <p className='home_description'>React Developer with high level of experience in web design and development, producting the Quality work</p>
                         <span className='button button_flex'>
                             Contact Me<UilMessage className='button_icon' />

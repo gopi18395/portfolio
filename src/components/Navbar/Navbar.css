@@ -7,7 +7,7 @@
     background-color: var(--body-color);
 }
 
-.scroll_header{
+.scroll_header {
     box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem ;
+    padding: 0 1.5rem;
 }
 
 .nav_logo,
@@ -25,7 +25,8 @@
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
-.nav_logo{
+
+.nav_logo {
     color: var(--first-color) !important;
     font-family: 'Damion', cursive;
 }
@@ -34,10 +35,11 @@
     color: var(--first-color);
 }
 
-.nav_toggle{
+.nav_toggle {
     font-size: 1.1rem;
     cursor: pointer;
 }
+
 .nav_toggle:hover {
     color: var(--first-color);
 }
@@ -54,12 +56,12 @@
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }
-    
+
 }
 
 .nav_list {
-    grid-template-columns: repeat(3,1fr);
-    gap:2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .nav_link {
@@ -67,19 +69,19 @@
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
-    color:var(--title-color);
+    color: var(--title-color);
     font-weight: var(--font-medium);
 }
 
 .nav_link:hover {
-    color:var(--first-color)
+    color: var(--first-color)
 }
 
 .nav_icon {
     font-size: 1.2rem;
 }
 
-.nav_close{
+.nav_close {
     position: absolute;
     right: 1.3rem;
     bottom: .5rem;
@@ -88,34 +90,77 @@
     color: var(--first-color);
 }
 
-.nav_close:hover{
+.nav_close:hover {
     color: var(--first-color-alt);
 }
 
-.show_menu{
+.show_menu {
     bottom: 0;
 }
 
-.nav_btn_visibility{
-visibility: hidden;
+.nav_btn_visibility {
+    visibility: hidden;
 }
 
-.active_link{
+.active_link {
     color: var(--first-color);
 }
 
-.nav_btns{
+.nav_btns {
     display: flex;
     align-items: center;
+    width: 60%;
+    justify-content: space-between;
 }
 
-.change_theme{
+.change_theme {
     font-size: 1.25rem;
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
 }
 
-.change_theme:hover{
+.change_theme:hover {
     color: var(--first-color);
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--first-color);
+    border-radius: 1rem;
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+.toggleScroll {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--first-color);
+    border-radius: 1rem;
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.toggle>* {
+    width: 1rem;
+    height: 1rem;
+    color: var(--first-color);
+}
+
+.t-button {
+    border-radius: 100%;
+    background: var(--first-color);
+    position: absolute;
+}
+
+.t-buttonScroll {
+    border-radius: 100%;
+    position: absolute;
+    background: var(--first-color);
+    width: 24px;
+    height: 24px;
 }

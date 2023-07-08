@@ -32,7 +32,7 @@
 
 .contact_label {
     font-size: var(--small-font-size);
-    color: var(--title-color);
+    color: var(--card-title);
 }
 
 .contact_input {
