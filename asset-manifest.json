@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4e1f93d5.css",
+    "main.js": "/portfolio/static/js/main.9064e62b.js",
+    "static/media/Resume-Gopi.pdf": "/portfolio/static/media/Resume-Gopi.da1f1e04ce8f3197096a.pdf",
+    "static/media/gopi_image1.png": "/portfolio/static/media/gopi_image1.6249cb7a67a6a29fa961.png",
+    "static/media/gopi_image2.png": "/portfolio/static/media/gopi_image2.0250dc16d19706d7509b.png",
+    "static/media/portfolio3.jpg": "/portfolio/static/media/portfolio3.f0e7fa8280d9df023e12.jpg",
+    "static/media/portfolio1.jpg": "/portfolio/static/media/portfolio1.b100f823e1d9a2e55cca.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.4e1f93d5.css.map": "/portfolio/static/css/main.4e1f93d5.css.map",
+    "main.9064e62b.js.map": "/portfolio/static/js/main.9064e62b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e1f93d5.css",
+    "static/js/main.9064e62b.js"
+  ]
+}
